@@ -9,6 +9,13 @@ modules:
   - name: wm_workflow
     parameters:
       content-target: true
+- name: approve-book-order-v2
+  type: com.sap.application.content
+  path: approve-book-order-v2
+  requires:
+  - name: wm_workflow
+    parameters:
+      content-target: true
 resources:
 - name: wm_workflow
   type: org.cloudfoundry.managed-service
